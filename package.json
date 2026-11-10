@@ -1,0 +1,13 @@
+{
+  "name": "grammar-grove",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "python3 scripts/build.py",
+    "test": "node tests/practice.mjs",
+    "deploy:cloudflare": "npm run build && npx wrangler deploy"
+  },
+  "devDependencies": {
+    "wrangler": "^4.160.0"
+  }
+}
